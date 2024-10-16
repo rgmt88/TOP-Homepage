@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RGMT Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>
+        window.onresize = function() {
+            console.log("Window width: " + window.innerWidth + "px");
+            console.log("Window height: " + window.innerHeight + "px");
+        };
+    </script>    
 </head>
 <body>
     <header>
         <div class="profile">
-            <img src="./photos/pic1.jpg" alt="Roberto Gustavo" class="profile-pic">
+            <div class="profile-pic-container">
+                <img src="./photos/pic1.jpg" alt="Roberto Gustavo" class="profile-pic">
+                <div class="name-overlay">
+                    <h1>Roberto Gustavo</h1>
+                </div>
+            </div>
             <div class="about-me">
                 <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eros in ipsum tempor, nec cursus velit elementum. Donec auctor, erat at pharetra viverra, nisi felis posuere risus, sit amet luctus ligula lectus at augue.</p>
@@ -43,7 +57,7 @@
                         </a>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eros in ipsum tempor, nec cursus velit elementum. Donec auctor, erat at pharetra viverra, nisi felis posuere risus, sit amet luctus ligula lectus at augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="individual-project">
                 <h2>screenshot of project</h2>
@@ -58,7 +72,7 @@
                         </a>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eros in ipsum tempor, nec cursus velit elementum. Donec auctor, erat at pharetra viverra, nisi felis posuere risus, sit amet luctus ligula lectus at augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="individual-project">
                 <h2>screenshot of project</h2>
@@ -73,7 +87,7 @@
                         </a>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eros in ipsum tempor, nec cursus velit elementum. Donec auctor, erat at pharetra viverra, nisi felis posuere risus, sit amet luctus ligula lectus at augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="individual-project">
                 <h2>screenshot of project</h2>
@@ -88,7 +102,7 @@
                         </a>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eros in ipsum tempor, nec cursus velit elementum. Donec auctor, erat at pharetra viverra, nisi felis posuere risus, sit amet luctus ligula lectus at augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="individual-project">
                 <h2>screenshot of project</h2>
@@ -103,7 +117,7 @@
                         </a>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eros in ipsum tempor, nec cursus velit elementum. Donec auctor, erat at pharetra viverra, nisi felis posuere risus, sit amet luctus ligula lectus at augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="individual-project">
                 <h2>screenshot of project</h2>
@@ -118,7 +132,7 @@
                         </a>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eros in ipsum tempor, nec cursus velit elementum. Donec auctor, erat at pharetra viverra, nisi felis posuere risus, sit amet luctus ligula lectus at augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
     </div>
@@ -133,7 +147,7 @@
             </div>
             <div class="email">
                 <img src="./icons/email-outline.svg" alt="Email">
-                <p>this.is.not.read@gmail.com</p>
+                <p>this.is.not.real@gmail.com</p>
             </div>
             <div class="social-icons">
                 <a href="github-link" target="_blank">
@@ -147,6 +161,7 @@
                 </a> 
             </div>
         </div>
+        <img src="./photos/pic2.jpg" alt="Roberto Gustavo" class="profile-pic">
     </footer>
 </body>
 </html>
