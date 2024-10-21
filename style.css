@@ -74,6 +74,12 @@ header::before {
     text-align: center;
 }
 
+.about-me {
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+}
+
 .social-icons a {
     display: inline-block;
     margin: 10px;
@@ -168,7 +174,7 @@ header::before {
 
 .contact-me p {
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 15px;
     text-align: center;
@@ -215,3 +221,79 @@ header::before {
     width: 100%;
     height: 100%;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 20px;
+        height: auto;    
+        position: relative;
+        overflow: hidden;
+    }
+
+    header::before {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 0% 75%);
+    }
+
+    .profile {
+        display: block !important;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .profile-pic-container {
+        float: left;
+        width: 50%;
+        position: relative;
+        transform: translateX(-5%);
+        transform: translateY(-10%);
+        margin-right: 10px;
+    }
+
+    .profile-pic {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .name-overlay {
+        position: absolute;
+        bottom: 70%;
+        left: 100%;
+        transform: translateX(-20%);
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 8px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        max-width: 100%;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .about-me {
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        margin: 80px 10px 10px 10px;
+        padding: 50px 0px 0px 0px;
+    }
+
+    .about-me h2 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .about-me p {
+        font-size: 1rem;
+        padding: 0;
+        margin: 20px;
+        
+    }
+
+    .social-icons {
+        margin: 0px;
+        text-align: center;
+    }
+}
+
