@@ -247,7 +247,7 @@ header::before {
         position: relative;
         transform: translateX(-5%);
         transform: translateY(-10%);
-        margin-right: 10px;
+        margin-right: 15px;
     }
 
     .profile-pic {
@@ -264,7 +264,7 @@ header::before {
         color: white;
         background-color: rgba(0, 0, 0, 0.5);
         padding: 8px;
-        font-size: 1.2rem;
+        font-size: 1.35rem;
         font-weight: bold;
         max-width: 100%;
         white-space: nowrap;
@@ -280,12 +280,12 @@ header::before {
     }
 
     .about-me h2 {
-        font-size: 1.75rem;
+        font-size: 2rem;
         text-align: center;
     }
 
     .about-me p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0;
         margin: 20px;
         
@@ -294,6 +294,82 @@ header::before {
     .social-icons {
         margin: 0px;
         text-align: center;
+    }
+
+    .my-work {
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .my-work h2 {
+        font-size: 1.75rem;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 30px;
+        max-width: 100%; 
+    }
+
+    .individual-project p {
+        font-size: 0.9rem;
+    }
+
+    .contact-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        max-width: 100%;
+        background-color: #007B9E;
+        color: white;
+    }
+
+    .personal-info {
+        width: 50%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .personal-info h2{
+        margin: 0 0 10px 10px;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .personal-info p {
+        margin: 0 0 0 10px;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .telephone, .email {
+        display: flex;
+        align-items: flex-start; 
+        padding: 10px;
+    }
+
+    .telephone img, .email img {
+        margin: 0 0 0 10px;
+        padding: 0;
+    }
+
+    .telephone p, .email p {
+        padding: 0;
+    }
+
+    .contact-me  .profile-pic {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .social-icons {
+        margin: 0 0 0 10px;
     }
 }
 
